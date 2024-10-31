@@ -8,9 +8,9 @@
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>debezium-connector-vitess</artifactId>
+    <artifactId>debezium-connector-planetscale</artifactId>
     <version>2.4.0.Final</version>
-    <name>Debezium Connector for Vitess</name>
+    <name>Debezium Connector for PlanetScale</name>
     <packaging>jar</packaging>
 
     <properties>

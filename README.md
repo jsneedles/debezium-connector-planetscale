@@ -9,13 +9,15 @@
 Copyright Debezium Authors.
 Licensed under the [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0).
 
-# Debezium Connector Vitess
+# Debezium Connector PlanetScale
 
 Debezium is an open source project that provides a low latency data streaming platform for change data capture (CDC).
 
-This repository contains incubating connector for [Vitess](https://vitess.io/) which is in an **early stage of its development**.
-You are encouraged to explore this connector and test it, but it is not recommended yet for production usage.
-E.g. the format of emitted messages may change, specific features may not be implemented yet etc.
+This repository contains PlanetScale's fork of the incubating connector for
+[Vitess](https://vitess.io/) which is in an **early stage of its development**.
+You are encouraged to explore this connector and test it, but it is not
+recommended yet for production usage. E.g. the format of emitted messages may
+change, specific features may not be implemented yet etc.
 
 ## Supported Features
 
