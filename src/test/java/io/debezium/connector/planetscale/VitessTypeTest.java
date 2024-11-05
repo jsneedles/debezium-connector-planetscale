@@ -18,6 +18,7 @@ public class VitessTypeTest {
 
     @Test
     public void shouldResolveVitessTypeToJdbcType() {
+        assertThat(VitessType.resolve(asField(Query.Type.BIT)).getJdbcId()).isEqualTo(Types.BIT);
         assertThat(VitessType.resolve(asField(Query.Type.INT8)).getJdbcId()).isEqualTo(Types.SMALLINT);
         assertThat(VitessType.resolve(asField(Query.Type.INT16)).getJdbcId()).isEqualTo(Types.SMALLINT);
         assertThat(VitessType.resolve(asField(Query.Type.INT24)).getJdbcId()).isEqualTo(Types.INTEGER);

@@ -104,6 +104,8 @@ public class VitessType {
     public static VitessType resolve(Query.Field field) {
         String type = field.getType().name();
         switch (type) {
+            case "BIT":
+                return new VitessType(type, Types.BIT);
             case "INT8":
             case "UINT8":
             case "INT16":
