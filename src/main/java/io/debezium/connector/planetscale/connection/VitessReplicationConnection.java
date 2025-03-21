@@ -116,13 +116,7 @@ public class VitessReplicationConnection implements ReplicationConnection {
             stub = MetadataUtils.attachHeaders(stub, metadata);
         }
 
-        final Instant startedSnapshotAt;
-        if (config.getSnapshotMode() == SnapshotMode.INITIAL_ONLY) {
-            startedSnapshotAt = VitessConnector.getCurrentTimestamp(config);
-        }
-        else {
-            startedSnapshotAt = null;
-        }
+        final Instant startedSnapshotAt = VitessConnector.getCurrentTimestamp(config);
 
         StreamObserver<Vtgate.VStreamResponse> responseObserver = new ClientResponseObserver<Vtgate.VStreamRequest, Vtgate.VStreamResponse>() {
             private ClientCallStreamObserver<VStreamRequest> requestStream;
